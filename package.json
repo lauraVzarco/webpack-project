@@ -1,0 +1,28 @@
+{
+  "name": "webpack-project",
+  "version": "1.0.0",
+  "description": "creating a react app with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauraVzarco/webpack-project.git"
+  },
+  "author": "lauraVzarco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauraVzarco/webpack-project/issues"
+  },
+  "homepage": "https://github.com/lauraVzarco/webpack-project#readme",
+  "dependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0"
+  }
+}
