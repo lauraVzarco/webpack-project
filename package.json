@@ -4,7 +4,14 @@
   "description": "creating a react app with webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "logo": "node ./src/base/conf/.react-base/logo.js",
+    "webpack": "webpack",
+    "start": "npm run logo && cross-env NODE_ENV=development webpack-dev-server --mode development --webpack.config.js",
+    "build": "npm run logo && npm run && cross-env NODE_ENV=production webpack --mode production --config webpack.config.js",
+    "dev": "webpack --mode",
+    "server": "npm run build && cross-env NODE_ENV=production node server/",
+    "lint": "npm run logo && eslint src --ext .js --ext .jsx"
   },
   "repository": {
     "type": "git",
@@ -17,12 +24,32 @@
   },
   "homepage": "https://github.com/lauraVzarco/webpack-project#readme",
   "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "eslint": "^5.13.0",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "webpack": "^4.29.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
-    "babel-preset-env": "^1.7.0"
-  }
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "babel-eslint": "^10.0.1",
+  "eslint": "^5.11.1",
+  "eslint-config-airbnb": "^17.1.0",
+  "eslint-config-airbnb-base": "^13.1.0",
+  "eslint-import-resolver-webpack": "^0.10.1",
+  "eslint-plugin-import": "^2.14.0",
+  "eslint-plugin-jsx-a11y": "^6.1.2",
+  "eslint-plugin-react": "^7.12.1"
 }
