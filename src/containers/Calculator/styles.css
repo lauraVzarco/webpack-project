@@ -1,0 +1,35 @@
+.Calculator {
+    font-size: 35px;
+    text-align: center;
+    background-color: #cccccc;
+    height:410px;
+    width:290px;
+    margin: auto;
+    margin-top: 8%;
+    padding: 3px;
+    border-radius:10px;
+    box-shadow:5px 10px 30px 5px #444;
+}
+
+.CalculatorName {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+}
+
+.CalculatorBrand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.homeButton {
+    width: auto;
+    background-color: transparent;
+    border-color:darkmagenta;
+    border-radius: 25px;
+    color: darkmagenta;
+    box-shadow:none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+    }

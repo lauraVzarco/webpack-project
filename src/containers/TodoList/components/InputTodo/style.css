@@ -1,0 +1,11 @@
+.inputTodoLabel {
+    display: none;
+}
+.inputTodoInput {
+    width: 350px;
+    height: 25px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
