@@ -5,9 +5,9 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   mode: "development",
+  devtool: 'cheap-module-eval-source-map', 
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/",
+    path: path.resolve(__dirname, "./dist"),
     filename: "culo.js"
   },
   module: {
@@ -39,15 +39,15 @@ module.exports = {
     ]
   },
   devServer : {
-    contentBase: "./dist"
+    contentBase: path.resolve(__dirname, 'dist')
   },
   resolve: {
     extensions: ["*", ".js", ".jsx"]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "dist/index.html",
-      filename: "index.html"
+      template: "./src/index.html",
+      filename: "./index.html"
     })
   ],
 };
