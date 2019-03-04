@@ -26,7 +26,9 @@
     border: 1px solid;
     border-color: #dfdcdc #d9d6d6 #ccc;
     border-radius: 2px;
-    box-shadow: 4px 18px 55px -1px rgba(0,0,0,0.38);}
+    box-shadow: 4px 18px 55px -1px rgba(0,0,0,0.38);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .homeButton {
     width: auto;

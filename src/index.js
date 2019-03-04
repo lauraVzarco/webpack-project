@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import './index.css';
-import App from './containers/App.jsx';
+import './App.css';
+import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
 
 
